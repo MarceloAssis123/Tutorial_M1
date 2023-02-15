@@ -1,0 +1,76 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://exercicio.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_right = 205.0
+margin_bottom = 66.0
+text = "1)"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_top = 44.0
+margin_right = 108.0
+margin_bottom = 76.0
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 1.0
+margin_top = 79.0
+margin_right = 102.0
+margin_bottom = 125.0
+text = "2)"
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 1.0
+margin_top = 118.0
+margin_right = 80.0
+margin_bottom = 152.0
+text = "3)"
+
+[node name="Exercicio_1" type="Button" parent="."]
+margin_left = 139.0
+margin_top = 2.0
+margin_right = 228.0
+margin_bottom = 22.0
+text = "1) Exercício 1"
+
+[node name="Exercicio_2" type="Button" parent="."]
+margin_left = 146.0
+margin_top = 53.0
+margin_right = 358.0
+margin_bottom = 73.0
+text = "2) Adicionar elemento na lista"
+
+[node name="Exercicio_3" type="Button" parent="."]
+margin_left = 148.0
+margin_top = 108.0
+margin_right = 316.0
+margin_bottom = 128.0
+text = "3) Texto"
+
+[node name="Exercicio_4" type="Button" parent="."]
+margin_left = 147.0
+margin_top = 171.0
+margin_right = 312.0
+margin_bottom = 191.0
+text = "4 )Salvar valor"
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+margin_left = 8.0
+margin_top = 166.0
+margin_right = 66.0
+margin_bottom = 190.0
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 203.0
+margin_right = 107.0
+margin_bottom = 224.0
+text = "4)"
+
+[connection signal="pressed" from="Exercicio_1" to="." method="_on_Exercicio_1_pressed"]
+[connection signal="pressed" from="Exercicio_2" to="." method="_on_Exercicio_2_pressed"]
+[connection signal="pressed" from="Exercicio_3" to="." method="_on_Exercicio_3_pressed"]
+[connection signal="pressed" from="Exercicio_4" to="." method="_on_Exercicio_4_pressed"]
