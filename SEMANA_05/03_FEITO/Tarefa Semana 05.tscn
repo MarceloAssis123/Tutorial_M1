@@ -1,0 +1,105 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Tarefa.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 564.0
+margin_top = 231.0
+margin_right = 691.0
+margin_bottom = 251.0
+rect_scale = Vector2( 4, 4 )
+text = "1) Coletar dados"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 37.0
+margin_top = 524.0
+margin_right = 198.0
+margin_bottom = 544.0
+rect_scale = Vector2( 4, 4 )
+text = "2) Incrementar número"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 366.0
+margin_top = 752.0
+margin_right = 644.0
+margin_bottom = 772.0
+rect_scale = Vector2( 4, 4 )
+text = "3) Alterando nome se tiver número ímpar"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 44.0
+margin_top = 93.0
+margin_right = 244.0
+margin_bottom = 143.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 1140.0
+margin_top = 78.0
+margin_right = 1426.0
+margin_bottom = 123.0
+rect_scale = Vector2( 4, 4 )
+text = "Número coletado:"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 64.0
+margin_top = 639.0
+margin_right = 447.0
+margin_bottom = 705.0
+rect_scale = Vector2( 4, 4 )
+text = "Número incrementado: "
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 6.0
+margin_top = 16.0
+margin_right = 121.0
+margin_bottom = 31.0
+rect_scale = Vector2( 4, 4 )
+text = "Insira um número"
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 32.0
+margin_top = 279.0
+margin_right = 134.0
+margin_bottom = 293.0
+rect_scale = Vector2( 4, 4 )
+text = "Insira um nome"
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+margin_left = 31.0
+margin_top = 343.0
+margin_right = 231.0
+margin_bottom = 393.0
+rect_scale = Vector2( 2, 2 )
+
+[node name="Label5" type="Label" parent="."]
+margin_left = 1140.0
+margin_top = 383.0
+margin_right = 1304.0
+margin_bottom = 416.0
+rect_scale = Vector2( 4, 4 )
+text = "Nome coletado:"
+
+[node name="Label6" type="Label" parent="."]
+margin_left = 669.0
+margin_top = 876.0
+margin_right = 747.0
+margin_bottom = 890.0
+rect_scale = Vector2( 4, 4 )
+text = "Novo nome:"
+
+[node name="Label7" type="Label" parent="."]
+margin_left = 706.0
+margin_top = 991.0
+margin_right = 848.0
+margin_bottom = 1005.0
+rect_scale = Vector2( 4, 4 )
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
